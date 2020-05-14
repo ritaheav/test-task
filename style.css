@@ -279,7 +279,7 @@
     z-index: 10;
 }
 .auto-spin-block:hover .feature-block {
-    max-height: 122px;
+    max-height: 160px;
     height: 122px;
 }
 
@@ -296,16 +296,19 @@
         width: 6%;
         margin-top: -127px;
     }
+    .auto-spin-block:hover .feature-block {
+        height: 113px;
+    }
 }
 @media (min-width:1701px) and (max-width: 1800px) {
     .spin-block {
-        margin-right: 60px;
+        margin-right: 46px;
         height: 119px;
     }
     .feature-block {
         /* bottom: 457px; */
         height: 137px;
-        width: 8%;
+        width: 7%;
     }
 }
 @media(min-width: 1540px) and (max-width: 1700px) {
@@ -315,10 +318,10 @@
     }
     .feature-block {
         /* bottom: 476px; */
-        width: 9%;
+        width: 7%;
         margin-left: 10px;
-        height: 139px;
         margin-top: -140px;
+        height: 118px;
     }
 }
 @media(max-width: 1470px) {
@@ -335,7 +338,8 @@
         margin-top: 12%;
     }
     .feature-block {  
-        width: 9%;
+        width: 8%;
+        height: 113px;
     }
 }
 @media(max-width: 1400px) {
@@ -352,9 +356,10 @@
     }
     .feature-block {
         /* bottom: 413px; */
-        width: 10%;
-        height: 136px;
-        margin-left: 6px;
+        width: 9%;
+        height: 122px;
+        margin-left: 7px;
+        margin-top: -139px;
     } 
 }
 @media(max-width: 1330px) {
@@ -362,9 +367,9 @@
         margin-right: -4%;
     }
     .feature-block {
-        width: 11%;
+        width: 10%;
         margin-top: -137px;
-        height: 140px;
+        height: 117px;
     } 
 }
 @media(max-width: 1245px) {
