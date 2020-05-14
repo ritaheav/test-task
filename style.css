@@ -8,8 +8,9 @@
     background-size: cover;
     display: flex;
     width: 60%;
-    margin: 0 auto;
+    margin: 10% auto;
     height: 73px;
+    max-width: 916px;
 }
 .info {
     background: url(assets/images/infobg-normal.png) 100% 100% no-repeat;
@@ -20,6 +21,10 @@
     font-family: "NotoSerifCJKsc-Black";
     color: #3b0008;
     text-shadow: 0px 1px #ffc600;
+}
+.info:hover {
+    background: url(assets/images/infobg-hover.png) 100% 100% no-repeat;
+    background-size: contain;
 }
 .info-block {
     width: 5%;
@@ -57,6 +62,10 @@
     justify-content: center;
     height: 88%;
     margin-right: 2%;
+}
+.button-plus:hover, .button-minus:hover {
+    background: url(assets/images/bg-hover.png) 100% 100% no-repeat;
+    background-size: contain;
 }
 .bet-block {
     width: 15.5%;
@@ -153,7 +162,62 @@
     justify-content: center;
     padding-top: 3%;
 }
+.turbo-button:hover {
+    background: url(assets/images/btn-on-hover.png) 100% 100% no-repeat;
+    background-size: contain;
+}
 .turbo-button img {
     width: 75%;
 }
-
+.auto-button {
+    width: 27%;
+    display: flex;
+    margin-left: 17%;
+    margin-top: 4%;
+}
+.auto-block {
+    width: 14%;
+    height: 41px;
+    margin-top: 2.5%;
+    margin-left: 1%;
+    background: url(assets/images/auto-bg-normal.png) 100% 100% no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+.auto-block:hover {
+    background: url(assets/images/auto-bg-hover.png) 100% 100% no-repeat;
+    background-size: contain;
+}
+.auto-button img {
+    width: 100%;
+}
+.spin-block {
+    background: url(assets/images/spinbg-normal.png) 100% 100% no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    width: 8%;
+    height: 123px;
+    right: 23%;
+    justify-content: center;
+    margin-top: -1%;
+}
+.spin {
+    width: 70%;
+    height: 69px;
+}
+.spin img {
+    width: 100%;
+    height: auto;
+}
+.spin-block:hover {
+    background: url(assets/images/spinbg-hover.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+.spin:hover img {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
