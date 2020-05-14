@@ -58,7 +58,7 @@
     height: 88%;
     margin-right: 2%;
 }
-.bet {
+.bet-block {
     width: 15.5%;
     display: flex;
     align-items: center;
@@ -71,10 +71,10 @@
 .button-plus img, .button-minus img {
     width: 50%;
 }
-.total-bet-title {
+.total-bet-title, .coin-title {
     color: #ff6972;
     font-family: "NotoSerifCJKsc-Black";
-    font-size: 9px;
+    font-size: 8px;
     margin: 0;
     margin-top: 5%;
 }
@@ -86,9 +86,74 @@
     justify-content: center;
     height: 36px;
 }
-.total-count {
+.total-count, .coin-count {
     color: #ffd100;
     font-family: "NotoSerifCJKsc-Black";
     margin: 0;
+    font-size: 12px;
+}
+.coin {
+    background: url(assets/images/bg-field.png) 100% 100% no-repeat;
+    background-size: contain;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.coin-block {
+    height: 41px;
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    margin-left: 0.5%;
+}
+.win-block {
+    background: url(assets/images/win-bg.png) 100% 100% no-repeat;
+    background-size: contain;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
+    margin-top: 1%;
+}
+.win {
+    width: 80%;
+}
+.win img {
+    width: 100%;
+    height: auto;
+}
+.turbo {
+    background: url(assets/images/bg-active.png) 100% 100% no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.turbo-block {
+    display: flex;
+    align-items: center;
+    height: 41px;
+    width: 7%;
+    margin-top: 2.5%;
+}
+.turbo-button {
+    background: url(assets/images/btn-on-normal.png) 100% 100% no-repeat;
+    background-size: contain;
+    width: 90%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+}
+.turbo-button img {
+    width: 75%;
 }
 
