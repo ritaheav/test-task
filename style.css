@@ -1,9 +1,15 @@
+.main {
+    width: 915px;
+    margin: 10% auto;
+    height: 75px;
+}
 .wrapper {
     background: url("assets/images/bg.png") 100% 100% no-repeat;
     background-size: contain;
     display: flex;
-    width: 60%;
-    margin: 10% auto;
+    /* width: 60%; */
+    width: inherit;
+    /* margin: 10% auto; */
     height: 73px;
     max-width: 916px;
 }
@@ -218,18 +224,26 @@
     align-items: center;
     position: absolute;
     z-index: 100;
-    width: 125px;
-    height: 124px;
-    right: 23%;
+    width: 112px;
+    height: 112px;
+    margin-left: 758px;
+    /* right: 23%; */
     justify-content: center;
     margin-top: -1%;
     cursor: pointer;
 }
+.spin-block-dis {
+    background: url(assets/images/spin-dis.png) 100% 100% no-repeat;
+    background-size: cover;
+}
 .spin {
     width: 70%;
-    height: 69px;
+    height: 62px;
 }
-.spin img {
+.spin-stop {
+    width: 48%;
+}
+.spin img, .spin-stop img {
     width: 100%;
     height: auto;
 }
@@ -257,15 +271,21 @@
     max-height: 0px;
     overflow: hidden;
     /* transition: max-height 0.4s linear; */
-    margin-top: -127px;
+    margin-top: -135px;
 }
 .feature-block ul {
     list-style-type: none;
     color: #ffd100;
-    font-family: "NotoSerifCJKsc-Black";
     font-size: 10px;
     padding: 10%;
-    margin-top: -2%;
+    margin-top: -10%;
+}
+.feature-block p {
+    color: #ffd100;
+    font-size: 10px;
+    padding: 10%;
+    margin: 0;
+    padding-bottom: 0;
 }
 .feature-block ul li:hover {
     color: white;
@@ -282,99 +302,38 @@
     max-height: 160px;
     height: 122px;
 }
+.disable-btn {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.countdown-txt {
+    color: #3d0000;
+}
+.countdown {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    margin-left: 9%;
+}
+.countdown-numb {
+    background: url(assets/images/decrease.png) 100% 100% no-repeat;
+    background-size: contain;
+    width: 29px;
+    color: #ffd100;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+.stop-game {
+    display: none;
+}
+.stop-btn-inactive {
+    opacity: 0.3;
+}
+.disable-hover:hover .feature-block {
+    max-height: 0px;
+    height: 122px;
+}
 
-@media (min-width:1801px) and (max-width: 1945px) {
-    .spin-block {
-        height: 120px;
-        width: 122px;
-        margin-right: 109px;
-    }
-    .feature-block {
-        /* bottom: 432px; */
-        background-size: contain;
-        height: 113px;
-        width: 6%;
-        margin-top: -127px;
-    }
-    .auto-spin-block:hover .feature-block {
-        height: 113px;
-    }
-}
-@media (min-width:1701px) and (max-width: 1800px) {
-    .spin-block {
-        margin-right: 46px;
-        height: 119px;
-    }
-    .feature-block {
-        /* bottom: 457px; */
-        height: 137px;
-        width: 7%;
-    }
-}
-@media(min-width: 1540px) and (max-width: 1700px) {
-    .spin-block {
-        margin-right: 10px;
-        height: 122px;
-    }
-    .feature-block {
-        /* bottom: 476px; */
-        width: 7%;
-        margin-left: 10px;
-        margin-top: -140px;
-        height: 118px;
-    }
-}
-@media(max-width: 1470px) {
-    .wrapper {
-        width: 75%;
-    }
-    .spin-block {
-        right: 21.5%;
-        background-size: cover;
-        width: 100px;
-        height: 101px;
-    }
-    .spin {
-        margin-top: 12%;
-    }
-    .feature-block {  
-        width: 8%;
-        height: 113px;
-    }
-}
-@media(max-width: 1400px) {
-    .wrapper {
-        width: 75%;
-    }
-    .spin-block {
-        margin-right: -1%;
-        height: 109px;
-        width: 110px;
-    }
-    .spin {
-        margin-top: 9px;
-    }
-    .feature-block {
-        /* bottom: 413px; */
-        width: 9%;
-        height: 122px;
-        margin-left: 7px;
-        margin-top: -139px;
-    } 
-}
-@media(max-width: 1330px) {
-    .spin-block {
-        margin-right: -4%;
-    }
-    .feature-block {
-        width: 10%;
-        margin-top: -137px;
-        height: 117px;
-    } 
-}
-@media(max-width: 1245px) {
-    .feature-block {
-        width: 12%;
-        /* bottom: 340px; */
-    } 
-}
