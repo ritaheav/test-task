@@ -1,3 +1,6 @@
+import './style.css';
+import { spinMove } from './spin.js';
+
 const soundDiv = document.querySelectorAll('.sound-div');
 const turbo = document.querySelector('.turbo');
 const turboButton = document.querySelector('.turbo-button');
@@ -8,7 +11,7 @@ const coinCount = document.querySelector('.coin-count');
 
 function sound() {
     let audio = new Audio(); 
-    audio.src = 'assets/audio/Button_Click.wav'; 
+    audio.src = 'audio/Button_Click.wav'; 
     audio.autoplay = true;
 };
 
@@ -31,17 +34,19 @@ document.addEventListener('click', (e) => {
         if(i !== coin.length - 1) {
             i += 1;
             coinCount.innerHTML = coin[i];
-        } else {
+        } 
+        if (i === coin.length - 1) {
             buttonPlus.classList.add('disable-btn');
         }
         buttonMinus.classList.remove('disable-btn');
     }
     if(e.target.id === "button-minus") {
-        if (i === 0) { 
-            buttonMinus.classList.add('disable-btn');
-        } else {
+        if (i !== 0) {
             i -= 1; 
             coinCount.innerHTML = coin[i];
+        }
+        if (i === 0) { 
+            buttonMinus.classList.add('disable-btn');
         }
         buttonPlus.classList.remove('disable-btn');
     };
@@ -49,5 +54,4 @@ document.addEventListener('click', (e) => {
     totalCount.innerHTML = "$" + count.toFixed(2);
 });
 
-
-
+spinMove();

@@ -1,10 +1,10 @@
 .main {
     width: 915px;
-    margin: 10% auto;
+    margin: 20% auto;
     height: 75px;
 }
 .wrapper {
-    background: url("assets/images/bg.png") 100% 100% no-repeat;
+    background: url("images/bg.png") 100% 100% no-repeat;
     background-size: contain;
     display: flex;
     /* width: 60%; */
@@ -14,7 +14,7 @@
     max-width: 916px;
 }
 .info {
-    background: url(assets/images/infobg-normal.png) 100% 100% no-repeat;
+    background: url("images/infobg-normal.png") 100% 100% no-repeat;
     background-size: contain;
     width: 100%;
     cursor: pointer;
@@ -24,11 +24,11 @@
     justify-content: center;
 }
 .info:hover {
-    background: url(assets/images/infobg-hover.png) 100% 100% no-repeat;
+    background: url("images/infobg-hover.png") 100% 100% no-repeat;
     background-size: contain;
 }
 .info:active {
-    background: url(assets/images/infobg-click.png) 100% 100% no-repeat;
+    background: url("images/infobg-click.png") 100% 100% no-repeat;
     background-size: contain;
 }
 .info-block {
@@ -44,7 +44,7 @@
     width: 21%;
 }
 .button-plus, .button-minus {
-    background: url(assets/images/bg-normal.png) 100% 100% no-repeat;
+    background: url("images/bg-normal.png") 100% 100% no-repeat;
     background-size: contain;
     width: 100%;
     height: 100%;
@@ -70,18 +70,18 @@
     margin-right: 2%;
 }
 .button-plus:hover, .button-minus:hover {
-    background: url(assets/images/bg-hover.png) 100% 100% no-repeat;
+    background: url("images/bg-hover.png") 100% 100% no-repeat;
     background-size: contain;
 }
 .button-plus:active, .button-minus:active {
-    background: url(assets/images/bg-click.png) 100% 100% no-repeat;
+    background: url("images/bg-click.png") 100% 100% no-repeat;
     background-size: contain;
 }
 .bet-block {
     width: 15.5%;
     display: flex;
     align-items: center;
-    background: url(assets/images/bg-field-bet.png) 100% 100% no-repeat;
+    background: url("images/bg-field-bet.png") 100% 100% no-repeat;
     background-size: contain;
     height: 41px;
     margin-left: 0.5%;
@@ -111,7 +111,7 @@
     font-size: 12px;
 }
 .coin {
-    background: url(assets/images/bg-field.png) 100% 100% no-repeat;
+    background: url("images/bg-field.png") 100% 100% no-repeat;
     background-size: contain;
     width: 100%;
     display: flex;
@@ -130,7 +130,7 @@
     margin-left: 0.5%;
 }
 .win-block {
-    background: url(assets/images/win-bg.png) 100% 100% no-repeat;
+    background: url("images/win-bg.png") 100% 100% no-repeat;
     background-size: contain;
     width: 32%;
     display: flex;
@@ -147,7 +147,7 @@
     height: auto;
 }
 .turbo {
-    background: url(assets/images/bg-active.png) 100% 100% no-repeat;
+    background: url("images/bg-active.png") 100% 100% no-repeat;
     background-size: contain;
     width: 100%;
     height: 100%;
@@ -155,7 +155,7 @@
     justify-content: center;
 }
 .inactive {
-    background: url(assets/images/bg-inactive.png) 100% 100% no-repeat;
+    background: url("images/bg-inactive.png") 100% 100% no-repeat;
     background-size: contain;
 }
 .turbo-block {
@@ -166,7 +166,7 @@
     margin-top: 2.5%;
 }
 .turbo-button {
-    background: url(assets/images/btn-on-normal.png) 100% 100% no-repeat;
+    background: url("images/btn-on-normal.png") 100% 100% no-repeat;
     background-size: contain;
     width: 90%;
     height: 25px;
@@ -177,11 +177,11 @@
     cursor: pointer;
 }
 .turbo-button:hover {
-    background: url(assets/images/btn-on-hover.png) 100% 100% no-repeat;
+    background: url("images/btn-on-hover.png") 100% 100% no-repeat;
     background-size: contain;
 }
 .turbo-button:active {
-    background: url(assets/images/btn-on-click.png) 100% 100% no-repeat;
+    background: url("images/btn-on-click.png") 100% 100% no-repeat;
     background-size: contain;
 }
 .turbo-button img {
@@ -199,7 +199,7 @@
 .auto-block {
     width: 90%;
     height: 41px;
-    background: url(assets/images/auto-bg-normal.png) 100% 100% no-repeat;
+    background: url("images/auto-bg-normal.png") 100% 100% no-repeat;
     background-size: contain;
     display: flex;
     align-items: center;
@@ -207,18 +207,18 @@
     z-index: 100;
 }
 .auto-block:hover {
-    background: url(assets/images/auto-bg-hover.png) 100% 100% no-repeat;
+    background: url("images/auto-bg-hover.png") 100% 100% no-repeat;
     background-size: contain;
 }
 .auto-block:active {
-    background: url(assets/images/auto-bg-click.png) 100% 100% no-repeat;
+    background: url("images/auto-bg-click.png") 100% 100% no-repeat;
     background-size: contain;
 }
 .auto-button img {
     width: 100%;
 }
 .spin-block {
-    background: url(assets/images/spinbg-normal.png) 100% 100% no-repeat;
+    background: url("images/spinbg-normal.png") 100% 100% no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -233,7 +233,7 @@
     cursor: pointer;
 }
 .spin-block-dis {
-    background: url(assets/images/spin-dis.png) 100% 100% no-repeat;
+    background: url("images/spin-dis.png") 100% 100% no-repeat;
     background-size: cover;
 }
 .spin {
@@ -248,11 +248,11 @@
     height: auto;
 }
 .spin-block:hover {
-    background: url(assets/images/spinbg-hover.png) 100% 100% no-repeat;
+    background: url("images/spinbg-hover.png") 100% 100% no-repeat;
     background-size: cover;
 }
 .spin-block:active {
-    background: url(assets/images/spinbg-click.png) 100% 100% no-repeat;
+    background: url("images/spinbg-click.png") 100% 100% no-repeat;
     background-size: cover;
 }
 .spin:hover img {
@@ -260,7 +260,7 @@
     transition: 0.5s;
 }
 .feature-block {
-    background: url(assets/images/auto-hover-bgon.png) 100% 100% no-repeat;
+    background: url("images/auto-hover-bgon.png") 100% 100% no-repeat;
     background-size: cover;
     position: absolute;
     margin-left: 6px;
@@ -316,7 +316,7 @@
     margin-left: 9%;
 }
 .countdown-numb {
-    background: url(assets/images/decrease.png) 100% 100% no-repeat;
+    background: url("images/decrease.png") 100% 100% no-repeat;
     background-size: contain;
     width: 29px;
     color: #ffd100;
@@ -335,5 +335,74 @@
 .disable-hover:hover .feature-block {
     max-height: 0px;
     height: 122px;
+}
+
+@media(max-width: 950px) {
+    .main {
+        width: 700px;
+        height: 60px;
+    }
+    .wrapper {
+        height: 60px;
+        width: 700px;
+    }
+    .info-block, .bet-block, .coin-block, .turbo-block, .auto-spin-block {
+        height: 33px;
+    }
+    .auto-block {
+        height: 36px;
+    }
+    .win-block {
+        height: 52px;
+    }
+    .turbo-button {
+        height: 20px;
+    }
+    .spin-block {
+        width: 80px;
+        height: 80px;
+        margin-left: 588px;
+    }
+    .spin {
+        height: 46px;
+    }
+    .feature-block {
+        width: 18%;
+        height: 122px; 
+        margin-top: -122px;
+    }
+    .countdown-numb {
+        height: 22px;
+    }
+}
+@media(max-width: 700px) {
+    .main {
+        width: 500px;
+        height: 41px;
+    }
+    .wrapper {
+        height: 41px;
+        width: 500px;
+    }
+    .info-block, .bet-block, .coin-block, .turbo-block, .auto-spin-block, .auto-block {
+        height: 23px;
+    }
+    .win-block {
+        height: 37px;
+    }
+    .spin-block {
+        margin-left: 413px;
+        width: 60px;
+        height: 60px;
+    }
+    .total-bet-title, .coin-title {
+        font-size: 6px;
+    }
+    .turbo-button {
+        height: 13px;
+    }
+    .spin {
+        height: 35px;
+    }
 }
 

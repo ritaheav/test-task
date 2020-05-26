@@ -9,7 +9,8 @@ const autoButton = document.querySelector('.auto-button');
 const stopActive = document.querySelector('.stop-active');
 const autoSpinBlock = document.querySelector('.auto-spin-block');
 
-function activate() {
+function spinMove() {
+  function activate() {
     spin.classList.remove('stop-game');
     spinStop.classList.add('stop-game');
     disableBtn.forEach(item => item.classList.remove('disable-btn'));
@@ -36,7 +37,7 @@ amountOfRotation.addEventListener('click', ({ target: { dataset } }) => {
         spinBlock.classList.toggle('spin-block-dis');
         stopActive.classList.toggle('stop-btn-inactive');
         autoSpinBlock.classList.add('disable-hover');
-        if(dataset.count <= -1) {
+        if(dataset.count < 0) {
             clearInterval(timerId);
             countdown.classList.add('stop-game');
             autoButton.classList.remove('stop-game');
@@ -55,5 +56,10 @@ amountOfRotation.addEventListener('click', ({ target: { dataset } }) => {
         autoSpinBlock.classList.remove('disable-hover');
     }) 
   });
+};
+
+export { spinMove };
+
+
 
  
