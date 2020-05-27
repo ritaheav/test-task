@@ -310,6 +310,13 @@
     pointer-events: none;
     opacity: 0.4;
 }
+.disable-btn-spin {
+    pointer-events: none;
+}
+.disable-btn-spin-one {
+    pointer-events: none;
+    opacity: 0.4;
+}
 .countdown-txt {
     color: #3d0000;
 }

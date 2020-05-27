@@ -16,7 +16,8 @@ function spinMove() {
     countdownNumbValue.innerHTML = dataset.count;
     spin.classList.add('stop-game');
     spinStop.classList.remove('stop-game');
-    disableBtn.forEach(item => item.classList.add('disable-btn'));
+    disableBtn.forEach(item => item.classList.add('disable-btn-clone'));
+    spinBlock.classList.add('disable-btn-spin');
     let timerId = setInterval(() => {
       countdownNumbValue.innerHTML--;
         spinBlock.classList.toggle('spin-block-dis');
@@ -31,7 +32,7 @@ function spinMove() {
             stopActive.classList.remove('stop-btn-inactive');
             spin.classList.remove('stop-game');
             spinStop.classList.add('stop-game');
-            disableBtn.forEach(item => item.classList.remove('disable-btn'));
+            spinBlock.classList.remove('disable-btn-spin');
             disableBtn.forEach(item => item.classList.remove('disable-btn-clone'));
         };
     }, 1500);
@@ -41,7 +42,7 @@ function spinMove() {
         autoButton.classList.remove('stop-game');
         spin.classList.remove('stop-game');
         spinStop.classList.add('stop-game');
-        disableBtn.forEach(item => item.classList.remove('disable-btn'));
+        spinBlock.classList.remove('disable-btn-spin');
         spinBlock.classList.remove('spin-block-dis');
         clearInterval(timerId);
         autoSpinBlock.classList.remove('disable-hover');
