@@ -306,6 +306,10 @@
     pointer-events: none;
     opacity: 0.4;
 }
+.disable-btn-clone {
+    pointer-events: none;
+    opacity: 0.4;
+}
 .countdown-txt {
     color: #3d0000;
 }

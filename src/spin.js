@@ -51,7 +51,8 @@ function spinMove() {
 spinBlock.addEventListener('click', () => {
     spin.classList.toggle('stop-game');
     spinStop.classList.toggle('stop-game');
-    disableBtn.forEach(item => item.classList.toggle('disable-btn'));
+    disableBtn.forEach(item => item.classList.toggle('disable-btn-clone'));
+    autoSpinBlock.classList.toggle('disable-hover');
 });
 };
 
