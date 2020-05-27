@@ -32,6 +32,7 @@ function spinMove() {
             spin.classList.remove('stop-game');
             spinStop.classList.add('stop-game');
             disableBtn.forEach(item => item.classList.remove('disable-btn'));
+            disableBtn.forEach(item => item.classList.remove('disable-btn-clone'));
         };
     }, 1500);
     
@@ -45,6 +46,7 @@ function spinMove() {
         clearInterval(timerId);
         autoSpinBlock.classList.remove('disable-hover');
         stopActive.classList.remove('stop-btn-inactive');
+        disableBtn.forEach(item => item.classList.remove('disable-btn-clone'));
     }) 
   });
 
